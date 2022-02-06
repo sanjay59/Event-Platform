@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
+            'host' => env('MAIL_HOST', ''),
             'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('MAIL_USERNAME','apikey'),
-            'password' => env('MAIL_PASSWORD','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'),
+            'password' => env(''),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,11 +84,11 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'welcome@streamy.in'),
+        'address' => env('MAIL_FROM_ADDRESS', ''),
         'name' => env('MAIL_FROM_NAME', 'You deserve this break!'),
     ],
     'sendgrid' => [
-        'api_key' => env('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'),
+        'api_key' => env(''),
     ],
 
     'stream' => [
